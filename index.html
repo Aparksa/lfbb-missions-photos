@@ -198,10 +198,9 @@ VordmeLayer.loadGeoJson(
             'layers/vordme.geojson');
 VordmeLayer.setStyle( function(feature){
     var title = feature.getProperty('name');
-    var icon  = feature.getProperty('icon');
-    return  {
+        return  {
         icon: {
-        url: icon,
+        url: 'icons/VOR-DME.png',
         labelOrigin: new google.maps.Point(10, -10)
       }, 
         label: {
@@ -222,10 +221,9 @@ P5lLayer.loadGeoJson(
         
 P5lLayer.setStyle( function(feature){
     var title = feature.getProperty('name');
-    var icon  = feature.getProperty('icon');
     return  {
         icon: {
-        url: icon,
+        url: 'icons/P5l.png',
         labelOrigin: new google.maps.Point(6, -8)
       }, 
         label: {
@@ -254,14 +252,14 @@ P5lLayer.addListener('click', function (event) {
 // <---- Calque VOR
     
 VorLayer.loadGeoJson(
-            'https://dl.dropboxusercontent.com/s/2123o3tzh2gq7io/vor.geojson');
+            'layers/vor.geojson');
         
 VorLayer.setStyle( function(feature){
     var title = feature.getProperty('name');
 //  var icon  = feature.getProperty('icon');
     return  {
         icon: {
-        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Pictogram_VOR.svg/95px-Pictogram_VOR.svg.png',
+        url: 'icons/VOR.png',
         scaledSize: new google.maps.Size(25, 22),
         labelOrigin: new google.maps.Point(12, -8)
       }, 
@@ -291,14 +289,14 @@ VorLayer.addListener('click', function (event) {
 // <---- Calque NDB 
     
 NDBLayer.loadGeoJson(
-            'https://dl.dropboxusercontent.com/s/j0wpyjulunk3k64/NDB.geojson');
+            'layers/NDB.geojson');
         
 NDBLayer.setStyle( function(feature){
     var title = feature.getProperty('name');
 //    var icon  = feature.getProperty('icon');
     return  {
         icon: {
-        url: 'https://dl.dropboxusercontent.com/s/rpwj3wp4lsfqjfv/NDB.png',
+        url: 'icons/NDB.png',
         scaledSize: new google.maps.Size(25, 25),
         labelOrigin: new google.maps.Point(10, -8)
       }, 
@@ -329,14 +327,14 @@ NDBLayer.addListener('click', function (event) {
 // <---- Calque Para 
     
 ParaLayer.loadGeoJson(
-            'https://dl.dropboxusercontent.com/s/04ecrcb84mgtf57/Para.geojson');
+            'layers/Para.geojson');
         
 ParaLayer.setStyle( function(feature){
     var title = feature.getProperty('name');
 //    var icon  = feature.getProperty('icon');
     return  {
         icon: {
-        url: 'https://dl.dropboxusercontent.com/s/ephvj7fgrb66wf8/para.png',
+        url: 'icons/para.png',
         scaledSize: new google.maps.Size(13, 13),
         labelOrigin: new google.maps.Point(10, -8)
       }, 
